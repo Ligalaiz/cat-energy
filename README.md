@@ -1,7 +1,7 @@
-# Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Личный проект «Кэт энерджи»
 
-* Студент: [Няим Абдуллин](https://up.htmlacademy.ru/adaptive/15/user/108005).
-* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+* Студент: [Anonimus](https://en.wikipedia.org/wiki/Anonymous_(group)).
+* Наставник: [Anonimus](https://en.wikipedia.org/wiki/Anonymous_(group)).
 
 ---
 

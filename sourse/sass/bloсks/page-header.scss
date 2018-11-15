@@ -1,0 +1,31 @@
+.page-header__row {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: $color-border;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: $color-border;
+  }
+}
+
+.page-header__logo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 10px;
+}

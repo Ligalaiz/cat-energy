@@ -1,7 +1,48 @@
-body {
-  background-color: red;
+.in-use {
+  margin-bottom: 40px;
 }
 
-.testing {
-  width: percentage(5/7);
+.in-use__title {
+  font-size: 36px;
+  line-height: 1.6;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.in-use__item {
+  position: relative;
+  padding-left: 80px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.3;
+  font-family: "Arial", sans-serif;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $color-green;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+  }
+
+  &--consist::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &--form::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &--use::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &--deadlines::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
 }

@@ -106,35 +106,36 @@
       </div>
     </section>
 
-  <div class="container-row">
     <!-- Contacts -->
     <section class="contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
-      <div class="container-row">
-        <p><b>Приглашаем к сотрудничеству дилеров!</b></p>
-        <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="container-row  contacts-row">
+        <p class="contacts__promo"><b>Приглашаем к сотрудничеству дилеров!</b></p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-      <div class="contacts__map"></div>
+      <div class="contacts__map" id="map"></div>
     </section>
-  </div>
   </main>
-  <footer>
+  <footer class="page-footer">
     <div class="container-row">
       <div class="footer__logo">
-        <img src="http://placehold.it/128x24" alt="Кэт энерджи">
+        <img src="img/logo-footer.svg" alt="Кэт энерджи" width="128" height="24">
       </div>
       <div class="footer__social  social">
         <ul class="social__list">
-          <li class="social__item"><a class="social__link" href="#"><span>Мы Вконтакте</span></a></li>
-          <li class="social__item"><a class="social__link" href="#"><span>Мы в Инстаграме</span></a></li>
-          <li class="social__item"><a class="social__link" href="#"><span>Мы в Фейсбук</span></a></li>
+          <li class="social__item"><a class="social__link  social__link--vk" href="#"><span class="visually-hidden">Мы Вконтакте</span></a></li>
+          <li class="social__item"><a class="social__link  social__link--inst" href="#"><span class="visually-hidden">Мы в Инстаграме</span></a></li>
+          <li class="social__item"><a class="social__link  social__link--fb" href="#"><span class="visually-hidden">Мы в Фейсбук</span></a></li>
         </ul>
       </div>
       <div class="footer__copyright">
-        <img src="http://placehold.it/280x34" alt="Кэт энерджи">
+        <p class="footer__copyright--title">Html <span>academy</span></p>
+        <img src="img/icon-htmlacademy.svg" alt="Кэт энерджи" width="27" height="34">
       </div>
     </div>
   </footer>
+  <script src="http://api-maps.yandex.ru/2.1.68/?lang=ru_RU" type="text/javascript"></script>
+  <script src="js/yandex-map.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 </html>

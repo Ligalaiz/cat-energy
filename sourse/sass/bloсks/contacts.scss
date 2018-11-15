@@ -1,7 +1,26 @@
-body {
-  background-color: red;
+.contacts {
+  padding-top: 10px;
 }
 
-.testing {
-  width: percentage(5/7);
+.contacts-row {
+  display: flex;
+}
+
+.contacts__promo {
+  text-align: left;
+}
+
+.contacts__promo  b {
+  font-size: 16px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.contacts__address {
+  @include text;
+}
+
+.contacts__map {
+  height: 360px;
 }

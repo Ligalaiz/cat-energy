@@ -1,7 +1,91 @@
-body {
-  background-color: red;
+.example {
+  background-color: $color-gray;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.testing {
-  width: percentage(5/7);
+.example__title {
+  @include title;
+}
+
+.example__text {
+  @include text;
+  margin-bottom: 30px;
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__item {
+  position: relative;
+  border: 1px solid $color-gray-middle;
+  border-radius: 10px;
+  padding: 0 10px;
+  width: 125px;
+  margin-bottom: 15px;
+
+  &--value {
+    font-size: 24px;
+    line-height: 1;
+    color: $color-black;
+    text-transform: uppercase;
+  }
+
+  &--param {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, 0);
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+    width: 60px;
+    background-color: $color-gray;
+  }
+}
+
+.example__spend {
+  text-transform: uppercase;
+  line-height: 1.4;
+  color: $color-black;
+  margin-bottom: 35px;
+}
+
+.example__range {
+  position: relative;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  max-width: 200px;
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85px;
+    height: 14px;
+    border: 1px solid $color-gray-middle;
+    background-color: $color-white;
+    border-radius: 10px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 35px;
+    height: 6px;
+    background-color: $color-green;
+    border-radius: 10px;
+  }
 }

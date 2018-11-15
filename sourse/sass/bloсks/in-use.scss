@@ -3,20 +3,13 @@
 }
 
 .in-use__title {
-  font-size: 36px;
-  line-height: 1.6;
-  font-weight: 400;
-  text-align: left;
-  margin-bottom: 40px;
+  @include title;
 }
 
 .in-use__item {
   position: relative;
   padding-left: 80px;
-  text-align: left;
-  font-size: 14px;
-  line-height: 1.3;
-  font-family: "Arial", sans-serif;
+  @include text;
 
   &::before {
     content: "";

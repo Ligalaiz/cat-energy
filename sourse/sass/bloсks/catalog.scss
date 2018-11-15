@@ -53,15 +53,12 @@
 }
 
 .catalog__text {
-  font-size: 14px;
-  line-height: 1.2;
-  font-family: "Arial", sans-serif;
-  text-align: left;
+  @include text;
 }
 
 .catalog__link {
   display: block;
-  border-top: 1px solid $color-grey-light;
+  border-top: 1px solid $color-gray-light;
   font-size: 16px;
   line-height: 1;
   text-transform: uppercase;

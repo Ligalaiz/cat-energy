@@ -4,79 +4,155 @@
 
 .catalog__item {
   position: relative;
-  background-color: $color-gray;
-  padding: 30px 20px 0;
+
   margin-bottom: 20px;
+  padding: 30px 20px 0;
+
+  background-color: $color-gray;
 
   &::before {
     content: "";
     position: absolute;
+    top: 25px;
+    left: 22px;
+
     width: 50px;
     height: 50px;
+
     background-color: $color-green;
     border-radius: 50%;
-    left: 22px;
+  }
+
+  &--slim::after {
+    content: "";
+    position: absolute;
     top: 25px;
+    left: 30px;
+
+    width: 35px;
+    height: 49px;
+
+    background-image: url(../img/icon-cat-slim.svg);
+    background-repeat: no-repeat;
+  }
+
+  &--pro::after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 12px;
+
+    width: 67px;
+    height: 28px;
+
+    background-image: url(../img/icon-cat-pro.svg);
+    background-repeat: no-repeat;
   }
 }
 
-.catalog__item--slim::after {
-  content: "";
-  position: absolute;
-  width: 35px;
-  height: 49px;
-  background-image: url(../img/icon-cat-slim.svg);
-  background-repeat: no-repeat;
-  left: 30px;
-  top: 25px;
-}
-
-.catalog__item--pro::after {
-  content: "";
-  position: absolute;
-  width: 67px;
-  height: 28px;
-  background-image: url(../img/icon-cat-pro.svg);
-  background-repeat: no-repeat;
-  left: 12px;
-  top: 35px;
-}
-
 .catalog__header {
-  font-size: 24px;
-  line-height: 1.5;
-  font-weight: 400;
   margin-top: 0;
   padding-left: 80px;
-  text-transform: uppercase;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
   text-align: left;
+  text-transform: uppercase;
 }
 
 .catalog__text {
   @include text;
 }
 
+
 .catalog__link {
+  position: relative;
+
   display: block;
-  border-top: 1px solid $color-gray-light;
+  padding: 20px 40px 20px 0;
+
   font-size: 16px;
   line-height: 1;
+  text-align: left;
+  color: $color-black;
   text-transform: uppercase;
   text-decoration: none;
-  color: $color-black;
-  text-align: left;
-  padding: 20px 40px 20px 0;
-  position: relative;
+
+  border-top: 1px solid $color-gray-light;
 
   &::after {
     content: "";
     position: absolute;
     top: 50%;
     right: 50%;
-    transform: translate(0, -50%);
+
     width: 24px;
     height: 11px;
+
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
+    transform: translate(0, -50%);
+  }
+}
+
+
+@media(min-width: $tablet-width) {
+  .catalog__item {
+    padding: 80px 0 43px 54px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      top: 90px;
+      left: auto;
+      right: 60px;
+    }
+
+    &--slim {
+      padding-right: 280px;
+    }
+
+    &--pro {
+      padding-right: 300px;
+    }
+
+    &--slim::after {
+      width: 140px;
+      height: 194px;
+      top: 80px;
+      left: auto;
+      right: 90px;
+    }
+
+    &--pro::after {
+      width: 268px;
+      height: 112px;
+      top: 135px;
+      left: auto;
+      right: 30px;
+    }
+  }
+
+  .catalog__link {
+    border-top: none;
+    font-size: 20px;
+    line-height: 1;
+
+    &:after {
+      right: 60%;
+    }
+  }
+
+  .catalog__header {
+    font-size: 36px;
+    line-height: 1;
+    padding-left: 0;
+  }
+
+  .catalog__text {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-left: 0;
   }
 }

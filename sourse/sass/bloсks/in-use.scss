@@ -11,7 +11,7 @@
   padding-left: 80px;
   @include text;
 
-  &::before {
+  & p::before {
     content: "";
     position: absolute;
     left: 0;
@@ -23,19 +23,83 @@
     background-size: 50px;
   }
 
-  &--consist::before {
+  &--consist p::before {
     background-image: url("../img/advantage-leaf@1x.png");
   }
 
-  &--form::before {
+  &--form p::before {
     background-image: url("../img/advantage-powder@1x.png");
   }
 
-  &--use::before {
+  &--use p::before {
     background-image: url("../img/advantage-dining@1x.png");
   }
 
-  &--deadlines::before {
+  &--deadlines p::before {
     background-image: url("../img/advantage-clock@1x.png");
   }
+}
+
+@media(min-width: $tablet-width){
+  .in-use {
+    padding-bottom: 30px;
+  }
+
+  .in-use__title {
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 75px;
+  }
+
+  .in-use__item {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 110px;
+    padding-left: 0;
+    width: 245px;
+
+    &:nth-child(4n+2) {
+      margin-bottom: 90px;
+    }
+
+    & p::before {
+      width: 80px;
+      height: 80px;
+      top: 0;
+    }
+
+    &::before {
+      position: absolute;
+      font-size: 281px;
+      line-height: 1;
+      color: $color-gray;
+      font-family: "Oswald", "Arial", sans-serif;;
+      top: -40px;
+      left: 90px;
+      z-index: -1;
+    }
+
+    &--consist::before {
+      content: "1";
+    }
+
+    &--form::before {
+      content: "2";
+    }
+
+    &--use::before {
+      content: "3";
+    }
+
+    &--deadlines::before {
+      content: "4";
+    }
+  }
+
+  .in-use__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
 }

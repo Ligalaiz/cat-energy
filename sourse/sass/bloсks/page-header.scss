@@ -6,18 +6,22 @@
     position: absolute;
     right: 50%;
     bottom: 0;
+
     width: 100vw;
     height: 1px;
+
     background-color: $color-border;
   }
 
   &::after {
     content: "";
     position: absolute;
-    left: 50%;
     bottom: 0;
+    left: 50%;
+
     width: 100vw;
     height: 1px;
+
     background-color: $color-border;
   }
 }
@@ -28,4 +32,41 @@
   width: 100%;
   padding-top: 14px;
   padding-bottom: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header .container-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-header__row::before,
+  .page-header__row::after,
+  .main-nav__item::before,
+  .main-nav__item::after {
+    display: none;
+  }
+
+  .main-nav {
+    display: block;
+    width: 438px;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+  }
+
+  .main-nav__link {
+    color: $color-black-dark;
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: 400;
+    padding-bottom: 10px;
+
+    &--active {
+      border-bottom: 2px solid $color-green;
+    }
+  }
 }

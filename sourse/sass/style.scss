@@ -4,11 +4,13 @@
 
 @import "global/fonts.scss";
 @import "global/basis.scss";
+@import "libs/style.scss";
 
+@import "bloсks/container-row.scss";
 @import "bloсks/btn-toggle.scss";
-@import "bloсks/page-header.scss";
 @import "bloсks/main-nav.scss";
-@import "bloсks/intro.scss";
+@import "bloсks/page-header.scss";
+@import "bloсks/nutrition.scss";
 @import "bloсks/catalog.scss";
 @import "bloсks/in-use.scss";
 @import "bloсks/example.scss";

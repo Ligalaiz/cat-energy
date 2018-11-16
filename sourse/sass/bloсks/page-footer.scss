@@ -1,13 +1,16 @@
 .page-footer {
-  background-color: $color-gray;
   padding-bottom: 20px;
+
+  background-color: $color-gray;
 }
 
 .footer__logo {
   margin-bottom: 23px;
   padding-top: 40px;
   padding-bottom: 30px;
+
   border-bottom: 1px solid $color-gray-light;
+  text-align: center;
 }
 
 .footer__copyright {
@@ -23,4 +26,22 @@
       text-transform: capitalize;
     }
   }
+}
+
+@media(min-width: $tablet-width) {
+  .footer__logo {
+    border-bottom: none;
+  }
+
+  .page-footer .container-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__copyright--title {
+    margin-right: 15px;
+    display: block;
+  }
+
 }

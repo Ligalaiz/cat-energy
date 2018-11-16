@@ -1,7 +1,68 @@
-body {
-  background-color: red;
+.nutrition {
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+  margin-bottom: 23px;
+  padding-top: 30px;
 }
 
-.testing {
-  width: percentage(5/7);
+.nutrition__title,
+.nutrition__promo {
+  line-height: 1;
+  text-align: center;
+  color: $color-white;
+  font-weight: 400;
+}
+
+.nutrition__title {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+.nutrition__promo {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+@media(min-width: $tablet-width) {
+  .nutrition {
+    background-image: none;
+    padding-bottom: 600px;
+  }
+
+  .nutrition__title {
+    font-size: 60px;
+    width: 415px;
+    text-align: left;
+  }
+
+  .nutrition__promo {
+    font-size: 20px;
+    width: 285px;
+    text-align: left;
+  }
+
+  .nutrition__title,
+  .nutrition__promo {
+    color: $color-black;
+  }
+
+  .nutrition__link {
+    font-size: 20px;
+    line-height: 1;
+    width: 245px;
+  }
+
+  .nutrition__row {
+    position: relative;
+    z-index: 1;
+  }
+
+  .nutrition__img {
+    position: absolute;
+    z-index: -1;
+    width: 709px;
+    height: 609px;
+  }
 }

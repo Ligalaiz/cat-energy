@@ -24,3 +24,25 @@
 .contacts__map {
   height: 360px;
 }
+
+@media(min-width: $tablet-width) {
+  .contacts__promo b {
+    font-size: 20px;
+    line-height: 1.25;
+    width: 155px;
+    display: block;
+  }
+
+  .contacts__address {
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+    width: 160px;
+    margin-left: auto;
+  }
+
+  .contacts__address--city {
+    display: block;
+    margin-top: 20px;
+  }
+}

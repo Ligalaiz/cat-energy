@@ -183,3 +183,40 @@
     padding-bottom: 5px;
   }
 }
+
+@media(min-width: $desctop-width) {
+  .example {
+    border-top: none;
+    background: linear-gradient(to top, $color-gray-bg 70.3%, $color-white 30%);
+  }
+
+  .example .container-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__title {
+    margin-bottom: 200px;
+  }
+
+  .example__text {
+    margin-bottom: 40px;
+  }
+
+  .example-info {
+    width: 435px;
+  }
+
+  .example__item--param {
+    background-color: $color-gray-bg;
+  }
+
+  .example__spend {
+    margin: 0;
+    width: 355px;
+  }
+
+  .example__spend--price {
+    margin-left: 80px;
+  }
+}

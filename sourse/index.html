@@ -42,7 +42,6 @@
   <main class="page-main">
     <h1 class="visually-hidden">Кэт энерджи - функциональное питание для котов</h1>
 
-
     <!-- Intro -->
     <section class="nutrition">
       <div class="container-row  nutrition__row">
@@ -86,28 +85,30 @@
     </div>
 
     <!-- Live example -->
-    <section class="example">
+    <div class="example">
       <div class="container-row">
-        <h2 class="example__title">Живой пример</h2>
-        <div class="example-info">
-          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-          <ul class="example__list">
-            <li class="example__item">
-              <p class="example__item--value">5 кг</p>
-              <p class="example__item--param">снижение веса</p>
-            </li>
-            <li class="example__item">
-              <p class="example__item--value">60 дней</p>
-              <p class="example__item--param">затрачено времени</p>
-            </li>
-          </ul>
-          <div  class="example__spend">
-            <p>Затраты на питание: 15 000 руб.</p>
+        <section class="example__info">
+          <h2 class="example__title">Живой пример</h2>
+          <div class="example-info">
+            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+            <ul class="example__list">
+              <li class="example__item">
+                <p class="example__item--value">5 кг</p>
+                <p class="example__item--param">снижение веса</p>
+              </li>
+              <li class="example__item">
+                <p class="example__item--value">60 дней</p>
+                <p class="example__item--param">затрачено времени</p>
+              </li>
+            </ul>
+            <div  class="example__spend">
+              <p>Затраты на питание: <span class="example__spend--price">15 000 руб.</span></p>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="example__slider">
-        <div class="container-row">
+        </section>
+
+        <section class="example__slider">
+
           <figure class="cd-image-container">
             <img src="img/after-tablet2x.png" alt="Original Image">
             <span class="cd-image-label" data-type="original"></span>
@@ -122,16 +123,18 @@
             <p class="range"></p>
             <p class="range-text  range-text--after">Стало</p>
           </div>
-        </div>
+        </section>
       </div>
-    </section>
+    </div>
 
     <!-- Contacts -->
     <section class="contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
       <div class="container-row  contacts-row">
-        <p class="contacts__promo"><b>Приглашаем к сотрудничеству дилеров!</b></p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address--city">Санкт-Петербург</span></p>
+        <div class="contacts-wrap">
+          <p class="contacts__promo"><b>Приглашаем к сотрудничеству дилеров!</b></p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address--city">Санкт-Петербург</span></p>
+        </div>
       </div>
       <div class="contacts__map" id="map"></div>
     </section>
@@ -154,7 +157,7 @@
       </div>
     </div>
   </footer>
-  <script src="http://api-maps.yandex.ru/2.1.68/?lang=ru_RU" type="text/javascript"></script>
+  <script src="http://api-maps.yandex.ru/2.1.68/?lang=ru_RU"></script>
   <script src="js/yandex-map.js"></script>
   <script src="js/libs/jquery-3.3.1.min.js"></script>
   <script src="js/libs/modernizr.js"></script>

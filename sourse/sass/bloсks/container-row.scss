@@ -8,3 +8,9 @@
     width: 708px;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .container-row {
+    width: 1220px;
+  }
+}

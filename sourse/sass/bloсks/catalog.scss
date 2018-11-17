@@ -156,3 +156,45 @@
     padding-left: 0;
   }
 }
+
+@media(min-width: $desctop-width) {
+  .catalog {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    width: 570px;
+    padding-right: 0;
+
+    &::before {
+      top: 25px;
+      left: 22px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &--slim::after {
+      top: 25px;
+      left: 30px;
+      width: 70px;
+      height: 97px;
+    }
+
+    &--pro::after {
+      top: 35px;
+      left: 12px;
+      width: 134px;
+      height: 56px;
+    }
+
+    .catalog__header {
+      padding-left: 150px;
+    }
+
+    .catalog__link::after {
+      right: 70%;
+    }
+  }
+
+}

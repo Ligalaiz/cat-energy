@@ -46,3 +46,35 @@
     margin-top: 20px;
   }
 }
+
+@media(min-width: $desctop-width) {
+  .contacts {
+    position: relative;
+    height: 404px;
+    padding-top: 0;
+  }
+
+  .contacts-wrap {
+    position: absolute;
+    display: flex;
+    width: 570px;
+    background-color: $color-white;
+    padding: 60px;
+    margin-top: 50px;
+    z-index: 1
+  }
+
+  .contacts__address {
+    text-align: left;
+  }
+
+  .contacts__map {
+    height: 404px;
+  }
+
+  #map {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}

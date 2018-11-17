@@ -40,3 +40,43 @@
   padding-bottom: 25px;
   font-weight: 500;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: block;
+    width: 438px;
+  }
+
+  .main-nav__item::before,
+  .main-nav__item::after {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+  }
+
+  .main-nav__link {
+    color: $color-black-dark;
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: 400;
+    padding-bottom: 10px;
+
+    &--active {
+      border-bottom: 2px solid $color-green;
+    }
+  }
+}
+
+@media(min-width: $desctop-width) {
+  .main-nav__link {
+    color: $color-white;
+  }
+
+  .main-nav__link--active {
+    border-bottom-color: $color-white;
+  }
+}

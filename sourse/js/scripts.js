@@ -40,8 +40,6 @@ function init () {
 })();
 
 jQuery(document).ready(function($){
-    // проверка является ли .cd-image-container в области видимости
-    // ...
 
     // делаем элемент .cd-handle движимым и сменяем позицию .cd-resize-img
     $('.cd-image-container').each(function(){

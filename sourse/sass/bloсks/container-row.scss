@@ -1,0 +1,16 @@
+.container-row {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .container-row {
+    width: 708px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .container-row {
+    width: 1220px;
+  }
+}

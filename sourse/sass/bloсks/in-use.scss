@@ -1,0 +1,131 @@
+.in-use {
+  margin-bottom: 46px;
+}
+
+.in-use__title {
+  @include title;
+  margin-bottom: 32px;
+}
+
+.in-use__item {
+  position: relative;
+  margin-bottom: 26px;
+  padding-left: 80px;
+  @include text;
+
+  & p::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 60px;
+    height: 60px;
+    background-color: $color-green;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+  }
+
+  &--consist p::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &--form p::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &--use p::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &--deadlines p::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+}
+
+@media(min-width: $tablet-width){
+  .in-use {
+    padding-bottom: 11px;
+  }
+
+  .in-use__title {
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 71px;
+  }
+
+  .in-use__item {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 97px;
+    padding-left: 0;
+    width: 245px;
+
+    &:nth-child(4n+2) {
+      margin-bottom: 116px;
+    }
+
+    & p::before {
+      width: 80px;
+      height: 80px;
+      top: 0;
+    }
+
+    &::before {
+      position: absolute;
+      font-size: 281px;
+      line-height: 1;
+      color: $color-gray;
+      font-family: "Oswald", "Arial", sans-serif;;
+      top: -40px;
+      left: 107px;
+      z-index: -1;
+    }
+
+    &--consist::before {
+      content: "1";
+      left: 118px;
+    }
+
+    &--form::before {
+      content: "2";
+      left: 110px;
+    }
+
+    &--use::before {
+      content: "3";
+      left: 113px;
+    }
+
+    &--deadlines::before {
+      content: "4";
+      left: 113px;
+    }
+  }
+
+  .in-use__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 630px;
+  }
+}
+
+@media(min-width: $desctop-width){
+  .in-use {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .in-use__list {
+    max-width: none;
+  }
+
+  .in-use__title {
+    margin-bottom: 69px;
+  }
+
+  .in-use__item:nth-child(4n+2) {
+    margin-bottom: 110px;
+  }
+}

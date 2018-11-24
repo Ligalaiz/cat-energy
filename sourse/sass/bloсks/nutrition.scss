@@ -1,0 +1,129 @@
+.nutrition {
+  margin-bottom: 21px;
+}
+
+.nutrition__promo-wrapper {
+  background-color: $color-green-bg;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 167px;
+  padding-top: 27px;
+}
+
+.nutrition__img {
+  position: absolute;
+  top: -140px;
+  width: 280px;
+  height: 271px;
+}
+
+.nutrition__picture-wrapper {
+  padding-top: 135px;
+  position: relative;
+}
+
+.nutrition__title,
+.nutrition__promo {
+  line-height: 1;
+  text-align: center;
+  color: $color-white;
+  font-weight: 400;
+}
+
+.nutrition__title {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.nutrition__promo {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+@media(min-width: $tablet-width) {
+  .nutrition {
+    padding-bottom: 507px;
+    padding-left: 118px;
+  }
+
+  .nutrition__promo-wrapper {
+    background-image: none;
+    background-color: transparent;
+    padding-top: 54px;
+    padding-bottom: 0;
+  }
+
+  .nutrition__picture-wrapper {
+    padding-top: 49px;
+  }
+
+  .nutrition__title {
+    font-size: 60px;
+    width: 415px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  .nutrition__promo {
+    font-size: 20px;
+    width: 285px;
+    text-align: left;
+  }
+
+  .nutrition__title,
+  .nutrition__promo {
+    color: $color-black;
+  }
+
+  .nutrition__link {
+    font-size: 20px;
+    line-height: 1;
+    width: 245px;
+    padding: 16px;
+  }
+
+  .nutrition__row {
+    position: relative;
+    z-index: 1;
+  }
+
+  .nutrition__img {
+    position: absolute;
+    z-index: -1;
+    width: 709px;
+    height: 609px;
+    top: -28px;
+    right: 89px;
+  }
+
+  .nutrition__picture-wrapper .container-row {
+    position: relative;
+  }
+}
+
+@media(min-width: $desctop-width) {
+  .nutrition {
+    padding-bottom: 247px;
+    padding-left: 159px;
+  }
+
+  .nutrition__img {
+    width: 552px;
+    height: 499px;
+    top: -314px;
+    right: 299px;
+    left: auto;
+  }
+
+  .nutrition__title {
+    margin-top: 56px;
+  }
+
+  .nutrition__picture-wrapper {
+    padding-top: 51px;
+  }
+}

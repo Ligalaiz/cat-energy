@@ -1,0 +1,25 @@
+.nutrition {
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+  margin-bottom: 23px;
+  padding-top: 30px;
+}
+
+.nutrition__title,
+.nutrition__promo {
+  line-height: 1;
+  color: $color-white;
+  font-weight: 400;
+}
+
+.nutrition__title {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+.nutrition__promo {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 35px;
+}

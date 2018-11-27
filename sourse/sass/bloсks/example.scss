@@ -368,4 +368,16 @@
   .example__slider-range::before {
     width: 610px;
   }
+
+  .range-text {
+    position: absolute;
+  }
+
+  .range-text--before {
+    left: 0;
+  }
+
+  .range-text--after {
+    right: 0;
+  }
 }

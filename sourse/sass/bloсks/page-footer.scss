@@ -27,6 +27,11 @@
       text-transform: capitalize;
     }
   }
+
+  .footer__copyright-logo {
+    width: 27px;
+    height: 34px;
+  }
 }
 
 @media(min-width: $tablet-width) {
